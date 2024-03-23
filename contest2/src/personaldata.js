@@ -4,33 +4,33 @@ export const PersonalData = (obj) => {
   let objFormate = obj.userData;
 
   const nameStyle = {
-    color: 'blue',
-    fontWeight:'500'
+    color: "blue",
+    fontWeight: "500",
   };
 
   return (
     <>
-    <div class="left">
-      <div className='personal'>
-        <h3>Personal information</h3>
-        <div className="nameinfo">
+      <div class="left">
+        <div className="personal">
+          <h3>Personal information</h3>
+          <div className="nameinfo">
             <p>UserName:{objFormate.username}</p>
-          <span>First Name:{objFormate.firstName}</span>
-          <span>Middle Name: {objFormate.maidenName}</span>
-          <span>Last Name: {objFormate.lastName}</span>
-        </div>
-        <div className="basic">
+            <span>First Name:{objFormate.firstName}</span>
+            <span>Middle Name: {objFormate.maidenName}</span>
+            <span>Last Name: {objFormate.lastName}</span>
+          </div>
+          <div className="basic">
             <p>DOB:{objFormate.birthDate}</p>
             <p>Age:{objFormate.age}</p>
             <p>Gender:{objFormate.gender}</p>
             <p>Email:{objFormate.email}</p>
             <p>Phone Number:{objFormate.phone}</p>
+          </div>
         </div>
+        <div class="pic">
+          <img src={objFormate.image} alt="pic" />
         </div>
-        <div class="pic"><img src={objFormate.image} alt='pic' /></div>
-        </div>
-        
-        
+      </div>
     </>
   );
 };

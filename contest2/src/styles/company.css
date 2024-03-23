@@ -1,0 +1,10 @@
+h3 {
+  margin-left: 13px;
+  text-decoration: underline;
+  color: red;
+}
+.company p {
+  margin-left: 13px;
+  font-weight: 700;
+  font-size: 22px;
+}

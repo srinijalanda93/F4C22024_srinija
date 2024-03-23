@@ -3,6 +3,7 @@ import "./profile.css";
 import { Header } from "./headerPro";
 import { PersonalData } from "./personaldata.js";
 import { Address } from "./address.js";
+import {Company} from "./company.js"
 function Profile() {
   const [user, setUser] = useState(null);
 
@@ -26,6 +27,7 @@ function Profile() {
           <Header userData={user} />
           <PersonalData userData={user} />
           <Address userData={user} />
+          < Company userData={user}/>
         </>
       )}
     </div>
