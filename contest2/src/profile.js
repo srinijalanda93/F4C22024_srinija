@@ -1,32 +1,35 @@
 import React, { useState, useEffect } from "react";
+import "./profile.css";
+import { Header } from "./headerPro";
+import { PersonalData } from "./personaldata.js";
+import { Address } from "./address.js";
 function Profile() {
-    const [user, setUser] = useState(null);
-  
-    useEffect(() => {
-      const id = localStorage.getItem("id");
-      fetch(`https://dummyjson.com/users/${id}`)
-        .then((res) => res.json())
-        .then((data) => {
-          setUser(data);
-        })
-        .catch((error) => {
-          console.error("Error fetching user data:", error);
-        });
-    }, []);
-  
-    return (
-      <div>
-        <h2>Profile</h2>
-        {user && (
-          <div>
-            <p>Name: {user.firstName}</p>
-            <p>Email: {user.email}</p>
-            <p>Phone: {user.phone}</p>
-            {/* Display other user information */}
-          </div>
-        )}
-      </div>
-    );
-  }
+  const [user, setUser] = useState(null);
 
-  export default Profile;
+  useEffect(() => {
+    const id = localStorage.getItem("id");
+    fetch(`https://dummyjson.com/users/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setUser(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching user data:", error);
+      });
+  }, []);
+
+  return (
+    <div>
+      {user && (
+        <>
+          {" "}
+          <Header userData={user} />
+          <PersonalData userData={user} />
+          <Address userData={user} />
+        </>
+      )}
+    </div>
+  );
+}
+
+export default Profile;

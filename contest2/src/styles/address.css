@@ -1,0 +1,15 @@
+ h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 10px; /* Add margin bottom to separate heading from content */
+  }
+ .add p{
+    font-weight: 700;
+    font-size: 22px;
+    margin-block: 3px;
+}
+.add{
+    margin-top: 3px;
+    margin-left: 13px;
+    border-bottom: 0.1px solid pink;
+}

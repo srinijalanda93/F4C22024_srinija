@@ -1,0 +1,36 @@
+.head{
+    padding: 0px !important;
+ 
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    height:45px;
+    position: relative;
+    top:0px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.01px solid black;
+}
+.head h2{
+    padding-block:5px;
+    margin-top: 0px !important;
+}
+.head h2{
+    span{
+        font-weight: 500;
+        color: cadetblue;
+        font-style: italic;
+    }
+}
+.head img {
+    border-radius: 50%; /* This will make the image round */
+    width: 35px;
+    height:35px;
+    border: 0.1px solid black;
+}
+.nameinfo span  {
+    padding-inline: 10px !important;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  

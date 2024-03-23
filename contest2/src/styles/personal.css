@@ -1,0 +1,45 @@
+.left{
+    display:flex;
+    align-items: center;
+    width: 100vw; /* Full width of the viewport */
+    height: 270px; /* Set height to 200 pixels */
+    padding-left:13px; 
+    justify-content: space-between;
+    border: 0.1px solid pink;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+  
+  .personal h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 10px; /* Add margin bottom to separate heading from content */
+  }
+  .nameinfo{
+    margin-block: 5px;
+  }  .nameinfo p{
+    font-weight: 700;
+    font-size: 22px;
+    margin-block: 3px;
+  }
+  .nameinfo span :nth-child(2),
+  .nameinfo span :nth-child(3)
+  {
+    padding-inline: 10px !important;
+    font-weight: 700;
+    font-size: 22px;
+}
+.basic p{
+    font-weight: 700;
+    font-size: 22px;
+    margin-block: 3px;
+}
+ .pic{
+    img{
+        width:200px;
+        height:200px;
+        border-radius: 50%;
+        padding-right: 30px;
+    }
+ } 
