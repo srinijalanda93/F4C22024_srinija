@@ -1,0 +1,68 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%); */
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+.loginPage {
+    margin: auto;
+    width: 500px;
+    height: 160px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 10px;
+    box-sizing: border-box;
+}
+
+ h2 {
+    margin-top: 3%;
+    text-align: center;
+}
+
+/* .loginPage > div:first-child {
+    margin-block: 10px;
+} */
+
+.input{
+    margin-block: 10px;
+}
+.input label{
+    font-size: 23px;
+    font-weight: 700;
+    
+}
+.input >input{
+    margin-left: 6px;
+    background-color: transparent;
+    border: none;
+    border:0.1px solid black;
+    position: relative;
+    top:0px;
+    border-radius: 3px;
+    padding-inline: 12px;
+    padding-block: 5px;
+}
+button{
+    padding-inline:12px;
+    font-size:20px;
+    background: transparent;
+    border: 0.1px solid black;
+    padding-block: 3px;
+    border-radius: 3px;
+}
+
+.input >input:hover{
+    border-color: beige;
+}
+button:hover{
+    box-shadow:1px 1px 1px 3px #515ada;
+}
