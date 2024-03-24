@@ -5,14 +5,14 @@ export const Address = (obj) => {
 
   return (
     <>
-      <div class="add">
+      <div className="add">
         <h3>Address Information</h3>
         <p>Address:{obj.userData.address.address}</p>
         <p>City:{obj.userData.address.city}</p>
         <p>Postal Code:{obj.userData.address.postalCode}</p>
         <p>State:{obj.userData.address.state}</p>
       </div>
-      <div class="edu">
+      <div className="edu">
         <h3>Education Qualification</h3>
         <p>University:{obj.userData.university}</p>
       </div>
